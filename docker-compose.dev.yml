@@ -25,6 +25,10 @@ services:
     ports:
       - 25000:27017
 
+  bootapp:
+    build: bootapp
+    ports:
+      - 3000:3000
   account-service:
     build: account-service
     ports:
