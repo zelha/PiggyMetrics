@@ -41,5 +41,13 @@ zuul:
         stripPrefix: false
         sensitiveHeaders:
 
+#    notification-service:
+#            path: /notifications/**
+#            serviceId: notification-service
+#            stripPrefix: false
+#            sensitiveHeaders:
+
+
+
 server:
   port: 4000

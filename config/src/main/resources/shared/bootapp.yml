@@ -1,0 +1,45 @@
+security:
+  oauth2:
+    client:
+      clientId: bootapp
+      clientSecret: ${ACCOUNT_SERVICE_PASSWORD}
+      accessTokenUri: http://auth-service:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+#
+#spring:
+#  data:
+#    mongodb:
+#      host: account-mongodb
+#      username: user
+#      password: ${MONGODB_PASSWORD}
+#      database: piggymetrics
+#      port: 27017
+#
+
+
+server:
+  context-path: /bootapp
+  port: 3000
+
+
+#server:
+#    port: 9030
+#    contextPath: /
+#
+#security:
+#    oauth2:
+#        resource:
+#            jwt:
+#                # Tells the JWT framework to fetch the public key from the authorization server during startup
+#                # Note: The authorization server needs to be running...
+#                key-uri: "http://localhost:8081/oauth/token_key"
+#spring:
+#  application:
+#    name: account-service
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+
+

@@ -17,6 +17,7 @@
 		<module>account-service</module>
 		<module>statistics-service</module>
 		<module>notification-service</module>
+		<module>bootapp</module>
 	</modules>
 
 </project>
